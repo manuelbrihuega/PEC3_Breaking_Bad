@@ -1,0 +1,166 @@
+html
+  overflow-x: hidden
+.presentacion > .contenido
+  padding: 40px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 40px
+
+  a
+    color: $verde
+
+  @media (max-width: 1000px)
+    display: block
+
+  > .texto.ancho
+    grid-column-start: 1
+    grid-column-end: 3
+
+    > p
+      margin-bottom: 20px
+    
+    > figure
+      text-align: center
+      font-size: 0.8rem
+      padding: 20px 40px 40px 40px
+
+      @media (max-width: 640px)
+        padding-left: 0px
+        padding-right: 0px
+
+      img
+        max-width: 100%
+        aspect-ratio: 16 / 9
+      
+      > iframe
+        width: 100%
+        max-width: 900px
+        aspect-ratio: 16 / 9
+
+      > figcaption
+        padding-top: 20px
+        text-align: center
+
+  > .imagen
+
+    @media (max-width: 1000px)
+      margin-top: 40px
+      margin-bottom: 40px
+      max-width: 800px
+      margin-left: auto
+      margin-right: auto
+    
+    figure
+      text-align: center
+
+    img
+      max-width: 100%
+    
+    figcaption
+      padding-top: 20px
+      text-align: center
+
+.big-banner
+  width: 100%
+  margin-top: 40px
+
+.splide__pagination
+  padding-left: 0px
+
+.presentacion .cabecera
+  overflow: hidden
+  @media (max-width: 460px)
+    text-align: center
+  h2
+    float: left
+    margin-top: 10px
+    margin-left: 20px
+    @media (max-width: 460px)
+      float: none
+      margin-left: 0px
+  svg
+    float: left
+    animation: saltito 1.5s linear 1s infinite
+    @media (max-width: 460px)
+      float: none
+
+.waltercito
+  max-width: 170px
+  animation: slideInslideOut 10s linear 1s infinite normal
+  position: relative
+  z-index: 1
+  margin-top: calc(-100%)
+
+@keyframes slideInslideOut
+  0%
+    transform: translateY(200px)
+  
+  8%
+    transform: translateY(0)
+  
+  16%
+    transform: translateY(200px)
+  
+  24%
+    transform: translate(200px,200px)
+  
+  32%
+    transform: translate(200px, 0px)
+
+  50%
+    transform: translate(200px, 200px)
+  
+  58%
+    transform: translate(1000px, 200px)
+  
+  66%
+    transform: translate(1000px, 0px)
+  
+  72%
+    transform: translate(1000px, 200px)
+  
+  80%
+    transform: translate(500px, 200px)
+  
+  88%
+    transform: translate(500px, 0px)
+  
+  100%
+    transform: translate(500px, 200px)
+
+@keyframes saltito
+  0%
+    animation-timing-function: ease-in
+    opacity: 1
+    transform: translateY(45px)
+  
+  24%
+    opacity: 1
+  
+  40%
+    animation-timing-function: ease-in
+    transform: translateY(24px)
+    
+  65%
+    animation-timing-function: ease-in
+    transform: translateY(12px)
+  
+  82%
+    animation-timing-function: ease-in
+    transform: translateY(6px)
+  
+  93%
+    animation-timing-function: ease-in
+    transform: translateY(4px)
+  
+  25%,
+	55%,
+	75%,
+	87%
+    animation-timing-function: ease-out
+    transform: translateY(0px)
+    
+  100%
+    animation-timing-function: ease-out
+    opacity: 1
+    transform: translateY(0px)
