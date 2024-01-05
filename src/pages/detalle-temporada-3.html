@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo sobre Breaking Bad</title>
     <link rel="stylesheet" href="../styles/styles.sass" />
+    <link rel="stylesheet" href="../../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script defer src="../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 </head>
 <body>
     <article>
@@ -81,7 +83,11 @@
             </div>
             <div class="trailer">
                 <figure id="trailer">
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/6_VZM_MBgPU?si=d-qzZDEYGrc_rQl-" title="Trailer de la tercera temporada de Breaking Bad" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <lite-youtube videoid="6_VZM_MBgPU" style="background-image: url('../../img_compressed/captura_youtube_3.webp');">
+                        <a href="https://www.youtube.com/embed/6_VZM_MBgPU?si=d-qzZDEYGrc_rQl-" class="lty-playbtn" title="Reproducir Video">
+                          <span class="lyt-visually-hidden">Reproductor de youtube con el trailer de la tercera temporada de Breaking Bad</span>
+                        </a>
+                    </lite-youtube>
                     <figcaption>Trailer de la Temporada 3 de Breaking Bad</figcaption>
                 </figure>
             </div>

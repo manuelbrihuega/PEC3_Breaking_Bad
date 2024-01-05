@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo sobre Breaking Bad</title>
     <link rel="stylesheet" href="../styles/styles.sass" />
+    <link rel="stylesheet" href="../../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script defer src="../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 </head>
 <body>
     <article>
@@ -85,7 +87,11 @@
             </div>
             <div class="trailer">
                 <figure id="trailer">
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/3oFofYisAko?si=CCnVxwF-C6nZ15yD" title="Trailer de la quinta temporada de Breaking Bad" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <lite-youtube videoid="3oFofYisAko" style="background-image: url('../../img_compressed/captura_youtube_5.webp');">
+                        <a href="https://www.youtube.com/embed/3oFofYisAko?si=CCnVxwF-C6nZ15yD" class="lty-playbtn" title="Reproducir Video">
+                          <span class="lyt-visually-hidden">Reproductor de youtube con el trailer de la quinta temporada de Breaking Bad</span>
+                        </a>
+                    </lite-youtube>
                     <figcaption>Trailer de la Temporada 5 de Breaking Bad</figcaption>
                 </figure>
             </div>

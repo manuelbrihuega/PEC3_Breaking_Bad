@@ -34,10 +34,11 @@
     "rimraf": "^5.0.5"
   },
   "dependencies": {
+    "@parcel/compressor-gzip": "^2.11.0",
     "@splidejs/splide": "^4.1.4",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^8.0.0",
-    "@parcel/compressor-gzip": "^2.11.0"
+    "lite-youtube-embed": "^0.3.0"
   },
   "staticFiles": {
     "staticPath": "img_compressed/no-enlazadas"

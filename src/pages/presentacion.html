@@ -6,6 +6,8 @@
     <title>Todo sobre Breaking Bad</title>
     <link rel="stylesheet" href="../styles/styles.sass" />
     <script type="module" src="../scripts/presentacion.js"></script>
+    <link rel="stylesheet" href="../../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script defer src="../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 </head>
 <body>
     <header>
@@ -88,13 +90,13 @@
                 <figure>
                     <picture>
                         <!-- Para pantallas más grandes de 1000px -->
-                        <source media="(min-width: 1000px)" srcset="../../img_compressed/heisenberg.webp">
+                        <source width="1500" height="1500" media="(min-width: 1000px)" srcset="../../img_compressed/heisenberg.webp">
                         
                         <!-- Para pantallas entre 640px y 1000px -->
-                        <source media="(min-width: 640px)" srcset="../../img_compressed/heisenberg-tablet.webp">
+                        <source width="450" height="450" media="(min-width: 640px)" srcset="../../img_compressed/heisenberg-tablet.webp">
                         
                         <!-- Para pantallas más pequeñas de 640px -->
-                        <img loading="lazy" src="../../img_compressed/heisenberg-movil.webp" alt="Retrato de Heisenberg que aparece en uno de los episodios de la serie Breaking Bad">
+                        <img width="300" height="300" loading="lazy" src="../../img_compressed/heisenberg-movil.webp" alt="Retrato de Heisenberg que aparece en uno de los episodios de la serie Breaking Bad">
                     </picture>
                     <figcaption>Heisenberg</figcaption>
                 </figure>
@@ -105,7 +107,11 @@
                     <h2>Sobre Breaking Bad</h2>
                 </div>
                 <figure>
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/HhesaQXLuRY?si=h-6aAu-m-xAzpD21" title="Reproductor de youtube con el trailer de la primera temporada de Breaking Bad" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <lite-youtube videoid="HhesaQXLuRY" style="background-image: url('../../img_compressed/captura_youtube.webp');">
+                        <a href="https://www.youtube.com/embed/HhesaQXLuRY?si=h-6aAu-m-xAzpD21" class="lty-playbtn" title="Reproducir Video">
+                          <span class="lyt-visually-hidden">Reproductor de youtube con el trailer de la primera temporada de Breaking Bad</span>
+                        </a>
+                    </lite-youtube>
                     <figcaption>Trailer de la primera temporada de Breaking Bad</figcaption>
                 </figure>
                 <p>Breaking Bad es una obra maestra de la televisión que narra la transformación de Walter White, un apacible profesor de química, en un temido magnate del narcotráfico. La serie, creada por Vince Gilligan, teje una trama magistral de moralidad, crimen y consecuencias. A lo largo de sus cinco temporadas, los espectadores son testigos de la evolución de Walter White, interpretado brillantemente por Bryan Cranston, desde un hombre común hasta un imperio criminal.</p>
@@ -120,13 +126,13 @@
                 <figure>
                     <picture>
                         <!-- Para pantallas más grandes de 1000px -->
-                        <source media="(min-width: 1000px)" srcset="../../img_compressed/heisenberg-saul.webp">
+                        <source width="900" height="509" media="(min-width: 1000px)" srcset="../../img_compressed/heisenberg-saul.webp">
                         
                         <!-- Para pantallas entre 640px y 1000px -->
-                        <source media="(min-width: 640px)" srcset="../../img_compressed/heisenberg-saul-tablet.webp">
+                        <source width="700" height="396" media="(min-width: 640px)" srcset="../../img_compressed/heisenberg-saul-tablet.webp">
                         
                         <!-- Para pantallas más pequeñas de 640px -->
-                        <img loading="lazy" src="../../img_compressed/heisenberg-saul-movil.webp" alt="Walter White y Saul discutiendo en una toma">
+                        <img width="500" height="454" loading="lazy" src="../../img_compressed/heisenberg-saul-movil.webp" alt="Walter White y Saul discutiendo en una toma">
                     </picture>
                     <figcaption>Walter White y Saul en una de las escenas de la serie</figcaption>
                 </figure>
