@@ -30,4 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyBackgroundObserver.observe(lazyBackground);
       });
     }
+
+    var elementoAnimado = document.getElementById("animacion-especial");
+    elementoAnimado.classList.add("especial");
 });
